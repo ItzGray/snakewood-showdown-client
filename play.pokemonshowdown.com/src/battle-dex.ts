@@ -242,7 +242,7 @@ export const Dex = new class implements ModdedDex {
 
 	pokeballs: string[] | null = null;
 
-	resourcePrefix = 'https://raw.githubusercontent.com/ItzGray/snakewood-showdown-sprites/master/'
+	resourcePrefix = 'https://raw.githubusercontent.com/ItzGray/snakewood-showdown-sprites/main/'
 
 	fxPrefix = (() => {
 		const protocol = (window.document?.location?.protocol !== 'http:') ? 'https:' : '';
@@ -927,6 +927,9 @@ export const Dex = new class implements ModdedDex {
 	getTypeIcon(type: string | null, b?: boolean) { // b is just for utilichart.js
 		type = this.types.get(type).name;
 		if (!type) type = '???';
+		if (type === '???') {
+			type = "QQQ";
+		}
 		let sanitizedType = type.replace(/\?/g, '%3f');
 		return `<img src="${Dex.resourcePrefix}sprites/types/${sanitizedType}.png" alt="${type}" height="14" width="32" class="pixelated${b ? ' b' : ''}" />`;
 	}
