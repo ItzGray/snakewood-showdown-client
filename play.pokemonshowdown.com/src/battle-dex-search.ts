@@ -1160,9 +1160,6 @@ class BattlePokemonSearch extends BattleTypedSearch<'pokemon'> {
 		} else if (this.formatType === 'stadium') {
 			table = table[`gen${dex.gen}stadium${dex.gen > 1 ? dex.gen : ''}`];
 		}
-		
-		console.log(format)
-		console.log(this.formatType)
 		if (!table.tierSet) {
 			table.tierSet = table.tiers.map((r: any) => {
 				if (typeof r === 'string') return ['pokemon', r];
@@ -1172,7 +1169,6 @@ class BattlePokemonSearch extends BattleTypedSearch<'pokemon'> {
 		}
 		let tierSet: SearchRow[] = table.tierSet;
 		let slices: { [k: string]: number } = table.formatSlices;
-		console.log(format)
 		if (
 			format === 'ubers' || format === 'uber' || format === 'ubersuu' ||
 			format === '4v4doublesuu' || format === 'nationaldexdoubles'
