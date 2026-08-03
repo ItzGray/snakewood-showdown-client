@@ -1162,6 +1162,7 @@ class BattlePokemonSearch extends BattleTypedSearch<'pokemon'> {
 		}
 		
 		console.log(format)
+		console.log(this.formatType)
 		if (!table.tierSet) {
 			table.tierSet = table.tiers.map((r: any) => {
 				if (typeof r === 'string') return ['pokemon', r];
