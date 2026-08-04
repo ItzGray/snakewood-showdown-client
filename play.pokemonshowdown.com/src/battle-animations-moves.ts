@@ -38746,6 +38746,7 @@ BattleMoveAnims['firepump'] = { anim: BattleMoveAnims['flamethrower'].anim };
 BattleMoveAnims['stormsurge'] = { anim: BattleMoveAnims['hydropump'].anim };
 BattleMoveAnims['boilingwater'] = { anim: BattleMoveAnims['bubblebeam'].anim };
 BattleMoveAnims['dracofury'] = { anim: BattleMoveAnims['dragonrage'].anim };
+BattleMoveAnims['icebreath'] = { anim: BattleMoveAnims['icywind'].anim };
 BattleMoveAnims['datastream'] = { anim: BattleMoveAnims['lockon'].anim };
 BattleMoveAnims['shadowswipe'] = { anim: BattleMoveAnims['falseswipe'].anim };
 BattleMoveAnims['ironslam'] = { anim: BattleMoveAnims['irontail'].anim };
