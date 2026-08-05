@@ -1614,7 +1614,7 @@ export class BattleScene implements BattleSceneStub {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 15);
+		this.setBgm(1 + this.numericId % 22);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1674,6 +1674,27 @@ export class BattleScene implements BattleSceneStub {
 			break;
 		case -101:
 			this.bgm = BattleSound.loadBgm('audio/spl-elite4.mp3', 3962, 152509, this.bgm);
+			break;
+		case 16:
+			this.bgm = BattleSound.loadBgm('audio/03_i_think_im_going_to_kill_myself.mp3', 0, 212227, this.bgm);
+			break;
+		case 17:
+			this.bgm = BattleSound.loadBgm('audio/burningmensssoul.mp3', 0, 155776, this.bgm);
+			break;
+		case 18:
+			this.bgm = BattleSound.loadBgm('audio/gen3-evil-team.mp3', 12924, 102391, this.bgm);
+			break;
+		case 19:
+			this.bgm = BattleSound.loadBgm('audio/gen-3-teamrocket-theme.mp3', 414, 79785, this.bgm);
+			break;
+		case 20:
+			this.bgm = BattleSound.loadBgm('audio/gen-3-e4.mp3', 12213, 62944, this.bgm);
+			break;
+		case 21:
+			this.bgm = BattleSound.loadBgm('audio/gen-3-champ.mp3', 12030, 66504, this.bgm);
+			break;
+		case 22:
+			this.bgm = BattleSound.loadBgm('audio/jail.mp3', 0, 524051, this.bgm);
 			break;
 		case 15:
 		default:
