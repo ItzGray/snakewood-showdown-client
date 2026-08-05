@@ -113,7 +113,6 @@ export const BattleSound = new class {
 
 	getSound(url: string) {
 		if (!window.HTMLAudioElement) return;
-		if (this.soundCache[url]) return this.soundCache[url];
 		try {
 			const sound = document.createElement('audio');
 			sound.src = `https://snakewoodshowdown.dynv6.net/${url}`;
