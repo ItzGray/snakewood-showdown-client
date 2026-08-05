@@ -117,6 +117,7 @@ export const BattleSound = new class {
 		try {
 			const sound = document.createElement('audio');
 			sound.src = `https://snakewoodshowdown.dynv6.net/${url}`;
+			console.log(sound.src);
 			sound.volume = this.effectVolume / 100;
 			this.soundCache[url] = sound;
 			return sound;
