@@ -1614,7 +1614,7 @@ export class BattleScene implements BattleSceneStub {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 22);
+		this.setBgm(16 + this.numericId % 11);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1672,6 +1672,9 @@ export class BattleScene implements BattleSceneStub {
 		case 14:
 			this.bgm = BattleSound.loadBgm('audio/sm-trainer.mp3', 8323, 89230, this.bgm);
 			break;
+		case 15:
+			this.bgm = BattleSound.loadBgm('audio/sm-rival.mp3', 11389, 62158, this.bgm);
+			break;
 		case -101:
 			this.bgm = BattleSound.loadBgm('audio/spl-elite4.mp3', 3962, 152509, this.bgm);
 			break;
@@ -1679,26 +1682,37 @@ export class BattleScene implements BattleSceneStub {
 			this.bgm = BattleSound.loadBgm('audio/03_i_think_im_going_to_kill_myself.mp3', 0, 212227, this.bgm);
 			break;
 		case 17:
-			this.bgm = BattleSound.loadBgm('audio/burningmensssoul.mp3', 0, 155776, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/gen3-evilteam.mp3', 13924, 103072, this.bgm);
 			break;
 		case 18:
-			this.bgm = BattleSound.loadBgm('audio/gen3-evil-team.mp3', 12924, 102391, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/gen3-teamrocket.mp3', 1414, 80785, this.bgm);
 			break;
 		case 19:
-			this.bgm = BattleSound.loadBgm('audio/gen-3-teamrocket-theme.mp3', 414, 79785, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/burningmenssoul.mp3', 0, 155776, this.bgm);
 			break;
 		case 20:
-			this.bgm = BattleSound.loadBgm('audio/gen-3-e4.mp3', 12213, 62944, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/gen3-e4.mp3', 13276, 63960, this.bgm);
 			break;
 		case 21:
-			this.bgm = BattleSound.loadBgm('audio/gen-3-champ.mp3', 12030, 66504, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/gen3-champ.mp3', 13030, 67504, this.bgm);
 			break;
 		case 22:
 			this.bgm = BattleSound.loadBgm('audio/jail.mp3', 0, 524051, this.bgm);
 			break;
-		case 15:
+		case 23:
+			this.bgm = BattleSound.loadBgm('audio/gen3-trainer.mp3', 81716, 159631, this.bgm);
+			break;
+		case 24:
+			this.bgm = BattleSound.loadBgm('audio/gen3-rival.mp3', 13390, 66214, this.bgm);
+			break;
+		case 25:
+			this.bgm = BattleSound.loadBgm('audio/gen3-gymleader.mp3', 13829, 77799, this.bgm);
+			break;
+		case 26:
+			this.bgm = BattleSound.loadBgm('audio/gen3-evilteamleader.mp3', 15476, 71542, this.bgm);
+			break;
 		default:
-			this.bgm = BattleSound.loadBgm('audio/sm-rival.mp3', 11389, 62158, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/jail.mp3', 0, 524051, this.bgm);
 			break;
 		}
 
