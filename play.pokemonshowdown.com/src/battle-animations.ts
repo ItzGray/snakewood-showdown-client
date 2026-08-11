@@ -40,6 +40,20 @@ This license DOES NOT extend to any other files in this repository.
 
 */
 
+// Seeded random code grabbed off the internet (for snakewood showdown)
+function seededRandom(seed: number) {
+	let x = seed >>> 0;
+	let y = 362436069;
+	let z = 521288629;
+	let w = 88675123;
+	const t = x ^ (x << 11);
+	x = y;
+	y = z;
+	z = w;
+	w = (w ^ (w >>> 19) ^ t ^ (t >>> 8)) >>> 0;
+	return w;
+}
+
 export class BattleScene implements BattleSceneStub {
 	battle: Battle;
 	animating = true;
@@ -1614,7 +1628,9 @@ export class BattleScene implements BattleSceneStub {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(16 + this.numericId % 11);
+		const rng: number = seededRandom(this.numericId);
+		const realRng: number = seededRandom(rng);
+		this.setBgm(16 + realRng % 21);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1697,7 +1713,7 @@ export class BattleScene implements BattleSceneStub {
 			this.bgm = BattleSound.loadBgm('audio/gen3-champ.mp3', 13030, 67504, this.bgm);
 			break;
 		case 22:
-			this.bgm = BattleSound.loadBgm('audio/jail.mp3', 0, 524051, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/jail.mp3', 0, 525051, this.bgm);
 			break;
 		case 23:
 			this.bgm = BattleSound.loadBgm('audio/gen3-trainer.mp3', 81716, 159631, this.bgm);
@@ -1711,8 +1727,38 @@ export class BattleScene implements BattleSceneStub {
 		case 26:
 			this.bgm = BattleSound.loadBgm('audio/gen3-evilteamleader.mp3', 15476, 71542, this.bgm);
 			break;
+		case 27:
+			this.bgm = BattleSound.loadBgm('audio/gen3-kyogregroudon.mp3', 41420, 80759, this.bgm);
+			break;
+		case 28:
+			this.bgm = BattleSound.loadBgm('audio/xd-miror-b.mp3', 9000, 57815, this.bgm);
+			break;
+		case 29:
+			this.bgm = BattleSound.loadBgm('audio/colosseum-miror-b.mp3', 896, 47462, this.bgm);
+			break;
+		case 30:
+			this.bgm = BattleSound.loadBgm('audio/gen3-frontierbrain.mp3', 5087, 95327, this.bgm);
+			break;
+		case 31:
+			this.bgm = BattleSound.loadBgm('audio/colosseum-trainer.mp3', 50355, 99662, this.bgm);
+			break;
+		case 32:
+			this.bgm = BattleSound.loadBgm('audio/colosseum-mirakleb.mp3', 42261, 83325, this.bgm);
+			break;
+		case 33:
+			this.bgm = BattleSound.loadBgm('audio/colosseum-cipherpeon.mp3', 79959, 152285, this.bgm);
+			break;
+		case 34:
+			this.bgm = BattleSound.loadBgm('audio/colosseum-first.mp3', 58680, 106016, this.bgm);
+			break;
+		case 35:
+			this.bgm = BattleSound.loadBgm('audio/xd-cipherpeon.mp3', 40734, 80189, this.bgm);
+			break;
+		case 36:
+			this.bgm = BattleSound.loadBgm('audio/clairdelune.mp3', 0, 300785, this.bgm);
+			break;
 		default:
-			this.bgm = BattleSound.loadBgm('audio/jail.mp3', 0, 524051, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/jail.mp3', 0, 525051, this.bgm);
 			break;
 		}
 
