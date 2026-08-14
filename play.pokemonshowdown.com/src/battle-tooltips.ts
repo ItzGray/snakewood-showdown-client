@@ -1316,7 +1316,7 @@ export class BattleTooltips {
 		if (item === 'deepseatooth' && species === 'Clamperl') {
 			stats.spa *= 2;
 		}
-		if (item === 'souldew' && this.battle.gen <= 6 && (species === 'Latios' || species === 'Latias')) {
+		if (item === 'souldew' && this.battle.gen <= 6 && (species === 'Latios' || species === 'Latias' || species === 'Luca Zamon' || species === 'Tea Barqan')) {
 			stats.spa = Math.floor(stats.spa * 1.5);
 			stats.spd = Math.floor(stats.spd * 1.5);
 		}
