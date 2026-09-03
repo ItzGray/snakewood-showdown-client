@@ -288,12 +288,22 @@ export class BattleScene implements BattleSceneStub {
 	) {
 		if (typeof effect === 'string') effect = BattleEffects[effect];
 
-		let $effect = $(`<img src="https://play.pokemonshowdown.com/fx/${effect.url!}" style="display:block;position:absolute" />`);
-		this.$fx.append($effect);
-		if (additionalCss) $effect.css(additionalCss);
-		$effect = this.$fx.children().last();
+		if (!effect.url?.includes("play.pokemonshowdown.com")) {
+			let $effect = $(`<img src="https://play.pokemonshowdown.com/fx/${effect.url!}" style="display:block;position:absolute" />`);
+			this.$fx.append($effect);
+			if (additionalCss) $effect.css(additionalCss);
+			$effect = this.$fx.children().last();
 
-		return this.animateEffect($effect, effect, start, end, transition, after);
+			return this.animateEffect($effect, effect, start, end, transition, after);
+		}
+		else {
+			let $effect = $(`<img src="${effect.url!}" style="display:block;position:absolute" />`);
+			this.$fx.append($effect);
+			if (additionalCss) $effect.css(additionalCss);
+			$effect = this.$fx.children().last();
+
+			return this.animateEffect($effect, effect, start, end, transition, after);
+		}
 	}
 	animateEffect(
 		$effect: JQuery, effect: string | SpriteData, start: ScenePos, end: ScenePos,
