@@ -1704,7 +1704,7 @@ export class BattleScene implements BattleSceneStub {
 			this.bgm = BattleSound.loadBgm('audio/gen3-teamrocket.mp3', 1414, 80785, this.bgm);
 			break;
 		case 19:
-			this.bgm = BattleSound.loadBgm('audio/burningmenssoul.mp3', 0, 155776, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/burningmenssoul.mp3', 0, 155776, this.bgm);
 			break;
 		case 20:
 			this.bgm = BattleSound.loadBgm('audio/gen3-e4.mp3', 13276, 63960, this.bgm);
