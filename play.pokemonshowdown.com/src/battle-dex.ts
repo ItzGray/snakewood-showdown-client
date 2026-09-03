@@ -660,7 +660,7 @@ export const Dex = new class implements ModdedDex {
 
 		if (miscData.num !== 0) {
 			let baseSpeciesid = toID(species.baseSpecies);
-			spriteData.cryurl = 'audio/cries/' + baseSpeciesid;
+			spriteData.cryurl = 'https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/cries/' + baseSpeciesid;
 			let formeid = species.formeid;
 			const specialFormeCries = [
 				'-bloodmoon', '-crowned', '-eternal', '-eternamax', '-four', '-hangry', '-hero', '-lowkey', '-noice', '-primal', '-rapidstrike', '-roaming', '-school', '-sky', '-starter', '-super', '-therian', '-unbound',

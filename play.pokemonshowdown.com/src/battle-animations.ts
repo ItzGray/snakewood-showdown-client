@@ -1695,70 +1695,70 @@ export class BattleScene implements BattleSceneStub {
 			this.bgm = BattleSound.loadBgm('audio/spl-elite4.mp3', 3962, 152509, this.bgm);
 			break;
 		case 16:
-			this.bgm = BattleSound.loadBgm('audio/03_i_think_im_going_to_kill_myself.mp3', 0, 212227, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/03_i_think_im_going_to_kill_myself.mp3', 0, 212227, this.bgm);
 			break;
 		case 17:
-			this.bgm = BattleSound.loadBgm('audio/gen3-evilteam.mp3', 13924, 103072, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/gen3-evilteam.mp3', 13924, 103072, this.bgm);
 			break;
 		case 18:
-			this.bgm = BattleSound.loadBgm('audio/gen3-teamrocket.mp3', 1414, 80785, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/gen3-teamrocket.mp3', 1414, 80785, this.bgm);
 			break;
 		case 19:
 			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/burningmenssoul.mp3', 0, 155776, this.bgm);
 			break;
 		case 20:
-			this.bgm = BattleSound.loadBgm('audio/gen3-e4.mp3', 13276, 63960, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/gen3-e4.mp3', 13276, 63960, this.bgm);
 			break;
 		case 21:
-			this.bgm = BattleSound.loadBgm('audio/gen3-champ.mp3', 13030, 67504, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/gen3-champ.mp3', 13030, 67504, this.bgm);
 			break;
 		case 22:
-			this.bgm = BattleSound.loadBgm('audio/jail.mp3', 0, 525051, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/jail.mp3', 0, 525051, this.bgm);
 			break;
 		case 23:
-			this.bgm = BattleSound.loadBgm('audio/gen3-trainer.mp3', 81716, 159631, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/gen3-trainer.mp3', 81716, 159631, this.bgm);
 			break;
 		case 24:
-			this.bgm = BattleSound.loadBgm('audio/gen3-rival.mp3', 13390, 66214, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/gen3-rival.mp3', 13390, 66214, this.bgm);
 			break;
 		case 25:
-			this.bgm = BattleSound.loadBgm('audio/gen3-gymleader.mp3', 13829, 77799, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/gen3-gymleader.mp3', 13829, 77799, this.bgm);
 			break;
 		case 26:
-			this.bgm = BattleSound.loadBgm('audio/gen3-evilteamleader.mp3', 15476, 71542, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/gen3-evilteamleader.mp3', 15476, 71542, this.bgm);
 			break;
 		case 27:
-			this.bgm = BattleSound.loadBgm('audio/gen3-kyogregroudon.mp3', 41420, 80759, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/gen3-kyogregroudon.mp3', 41420, 80759, this.bgm);
 			break;
 		case 28:
-			this.bgm = BattleSound.loadBgm('audio/xd-miror-b.mp3', 9000, 57815, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/xd-miror-b.mp3', 9000, 57815, this.bgm);
 			break;
 		case 29:
-			this.bgm = BattleSound.loadBgm('audio/colosseum-miror-b.mp3', 896, 47462, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/colosseum-miror-b.mp3', 896, 47462, this.bgm);
 			break;
 		case 30:
-			this.bgm = BattleSound.loadBgm('audio/gen3-frontierbrain.mp3', 5087, 95327, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/gen3-frontierbrain.mp3', 5087, 95327, this.bgm);
 			break;
 		case 31:
-			this.bgm = BattleSound.loadBgm('audio/colosseum-trainer.mp3', 50355, 99662, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/colosseum-trainer.mp3', 50355, 99662, this.bgm);
 			break;
 		case 32:
-			this.bgm = BattleSound.loadBgm('audio/colosseum-mirakleb.mp3', 42261, 83325, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/colosseum-mirakleb.mp3', 42261, 83325, this.bgm);
 			break;
 		case 33:
-			this.bgm = BattleSound.loadBgm('audio/colosseum-cipherpeon.mp3', 79959, 152285, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/colosseum-cipherpeon.mp3', 79959, 152285, this.bgm);
 			break;
 		case 34:
-			this.bgm = BattleSound.loadBgm('audio/colosseum-first.mp3', 58680, 106016, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/colosseum-first.mp3', 58680, 106016, this.bgm);
 			break;
 		case 35:
-			this.bgm = BattleSound.loadBgm('audio/xd-cipherpeon.mp3', 40734, 80189, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/xd-cipherpeon.mp3', 40734, 80189, this.bgm);
 			break;
 		case 36:
-			this.bgm = BattleSound.loadBgm('audio/clairdelune.mp3', 0, 300785, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/clairdelune.mp3', 0, 300785, this.bgm);
 			break;
 		default:
-			this.bgm = BattleSound.loadBgm('audio/jail.mp3', 0, 525051, this.bgm);
+			this.bgm = BattleSound.loadBgm('https://raw.githubusercontent.com/ItzGray/snakewood-showdown-audio/main/jail.mp3', 0, 525051, this.bgm);
 			break;
 		}
 
