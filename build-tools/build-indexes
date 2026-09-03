@@ -12,12 +12,6 @@ if (!fs.existsSync('caches/pokemon-showdown')) {
 	});
 }
 
-if (!fs.existsSync('play.pokemonshowdown.com/audio')) {
-	child_process.execSync('git clone https://github.com/ItzGray/snakewood-showdown-audio.git audio', {
-		cwd: 'play.pokemonshowdown.com',
-	});
-}
-
 process.stdout.write("Syncing data from Git repository... ");
 child_process.execSync('git pull', { cwd: 'caches/pokemon-showdown' });
 child_process.execSync('npm run build', { cwd: 'caches/pokemon-showdown' });
