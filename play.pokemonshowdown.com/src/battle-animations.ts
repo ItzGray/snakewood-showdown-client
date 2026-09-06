@@ -288,7 +288,7 @@ export class BattleScene implements BattleSceneStub {
 	) {
 		if (typeof effect === 'string') effect = BattleEffects[effect];
 
-		if (!effect.url?.includes("play.pokemonshowdown.com")) {
+		if (!effect.url?.includes("play.pokemonshowdown.com") && !effect.url?.includes("raw.githubusercontent.com")) {
 			let $effect = $(`<img src="https://play.pokemonshowdown.com/fx/${effect.url!}" style="display:block;position:absolute" />`);
 			this.$fx.append($effect);
 			if (additionalCss) $effect.css(additionalCss);
